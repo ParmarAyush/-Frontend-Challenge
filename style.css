@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --dark-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--cyan);
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-position: top -30rem left -15rem, bottom -35rem right -12rem; 
+    background-repeat: no-repeat,no-repeat; 
+    background-attachment: scroll, fixed;
+    background-size: auto,auto;
+    overflow: hidden;
+    
+}   
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.container {
+    height: 400px;
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.top-40 {
+    background-image: url('images/bg-pattern-card.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40%;     
+    border-radius:10px 10px 0 0 ;   
+    display: flex;
+    align-items: center;
+    justify-content: center;                                                   
+}
+
+.top-40 img {
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+}
+.mid-40 {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    line-height: 30px;
+    font-weight: 700;   
+}
+.mid-40 span {
+   color: var(--dark-gray);
+   font-weight: 400;    
+}
+
+.bottom-20 {
+    /* border: 2px solid red; */
+    border-top: 1px solid var(--dark-blue);
+    position: relative;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.bottom-20 > div {
+    padding: 25px;
+    font-weight: 700;
+}
+
+.bottom-20 > div > span {
+    color: var(--dark-blue);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
